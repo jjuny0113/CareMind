@@ -13,7 +13,7 @@ const Profile = () => {
     });
 
     if (userInfo) {
-      window.alert(`반가워요! ${userInfo?.username}님 행복한 하루되세요`);
+      window.alert(`반가워요! ${userInfo?.username}님 행복한 하루되세요😍`);
     }
   }, [userInfo?.username]);
 
@@ -29,21 +29,29 @@ const Profile = () => {
 
 export default Profile;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  margin-top: 100px;
+`;
 
 const Form = styled.div`
-  width: 500px;
-  height: 70vh;
-  margin: auto;
-  background: violet;
+  width: 400px;
+  height: 400px;
+  margin: 25vh auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.57);
 
   & img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-top: 20px;
+  }
+  & p {
+    font-size: 2em;
   }
 `;

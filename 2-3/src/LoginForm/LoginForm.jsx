@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { LOG_IN_REQUEST, GET_USER_INFO_REQUEST } from "../redux/reducer/user";
 import Input from "./components/Input";
+import styled from "styled-components";
 
 const LoginForm = ({ history }) => {
   const [id, setId] = useState("");
@@ -40,7 +41,7 @@ const LoginForm = ({ history }) => {
   };
 
   return (
-    <form onSubmit={handleUserInfoSubmit}>
+    <Form onSubmit={handleUserInfoSubmit}>
       {inputValues.map((item) => (
         <Input
           key={item.id}
@@ -49,8 +50,32 @@ const LoginForm = ({ history }) => {
         />
       ))}
       <button>로그인</button>
-    </form>
+    </Form>
   );
 };
 
 export default LoginForm;
+
+const Form = styled.form`
+  width: 25em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30vh auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.57);
+
+  & button {
+    width: 17em;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    outline: none;
+    background: #fc6885;
+  }
+`;
