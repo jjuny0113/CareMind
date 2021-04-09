@@ -47,10 +47,28 @@
  - login UI
 
      <img width="400" alt="login" src="https://user-images.githubusercontent.com/68732435/114158927-3630a580-9960-11eb-8f56-e8246fed059b.png">
+
+ - profile UI
+
+<img width="230" alt="스크린샷 2021-04-09 오후 5 59 37" src="https://user-images.githubusercontent.com/68732435/114159309-9de6f080-9960-11eb-8227-8758092c4beb.png">
+
+ - 로그인 
+   - 로그인 상황과 최대한 비슷하게 구현해봤습니다(실제 로그인 요청은 post이지만 server를 통한 mock data이용으로 구현하려다 보니 get요청으로 진행되었습니다).
+   - token은 redux-persist를 통해 localstorage에 JWT_KEY관리를 하였습니다(프로퍼티명 token).
+    
+    <img width="400" alt="스크린샷 2021-04-09 오후 6 00 33" src="https://user-images.githubusercontent.com/68732435/114160206-a2f86f80-9961-11eb-91de-e62460e663f3.png">
      
-     
-     
-     
+   - 로그인 flow
+   
+   ![Apr-09-2021 18-27-42](https://user-images.githubusercontent.com/68732435/114160780-4184d080-9962-11eb-9f99-2363413fd918.gif)
+   
+   - JWT_KEY 있을 때 
+   
+   ![token](https://user-images.githubusercontent.com/68732435/114161222-c839ad80-9962-11eb-8896-6c6ea4e0e5ab.gif)
+
+ - 파일 실행 확인 방법
+   - server폴더에서 npm start를 통해서 server를 엽니다.
+   - 2-2폴더에서 npm start를 통해서 확인하면 됩니다
      
      
      
