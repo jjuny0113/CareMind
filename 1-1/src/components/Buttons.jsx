@@ -14,8 +14,8 @@ export default Buttons;
 
 const Wrapper = styled.div`
   position: fixed;
-  right: 60px;
-  bottom: 300px;
+  right: 30px;
+  bottom: 20px;
 
   & button {
     background-color: #4caf50;
