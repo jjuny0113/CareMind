@@ -40,3 +40,18 @@
 - 파일 실행 확인 방법
    - server폴더에서 npm start를 통해서 server를 엽니다.
    - 2-2폴더에서 npm start를 통해서 확인하면 됩니다.
+
+
+## 2-3. React + React/Redux + Redux 로 로그인 상태 표시 UI 구현하기
+
+ - login UI
+
+     <img width="400" alt="login" src="https://user-images.githubusercontent.com/68732435/114158927-3630a580-9960-11eb-8f56-e8246fed059b.png">
+     
+     
+     
+     
+     
+     
+     
+     
